@@ -2,19 +2,25 @@
 
 ## General Info
 
-Projekt strony WWW wykonanej non profi.
-Powstał na potrzeby ćwiczania pisania kodu.
+Website design made non profi.
+It was created for practicing code writing
 
+##Setup
+Try a live demo or open index.html in your browser to try it out.
 
-## Setup & Technologies
-Użyto HTML5 i CSS3 i JS.
-Poznawałem i ćwiczyłem stylowanie i proste skrypty w JS. 
+Demo
+
+## Technologies
+
+HTML5 and CSS3 and JS were used.
+I learned and practiced styling and simple scripts in.
 
 
 
 ## Status
-Strona działa, ale do dopracowania zostało:
-- zachowanie footer.
-- dodanie responsywności ( menu hamburger)
 
-Strona nie umieszcona jeszcze na serwerze.
+The website works, but it needs to be refined:
+- footer behavior.
+- adding responsiveness (hamburger menu)
+
+The page is not hosted on the server yet.
