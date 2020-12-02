@@ -1,6 +1,4 @@
-html {
-    
-}
+
 
 body {
 	font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -214,7 +212,7 @@ section ul li{
 	transition: ease 0.5s;
 	text-decoration: none;
 	text-align: center;
-	max-width: ;
+	
 }
 table{
 	margin:0px auto;
@@ -253,7 +251,7 @@ a:-webkit-any-link {
 
 #dlonie{
 	min-height: 700px;
-	background-image: url("images/balance-3129347_1280.jpg");
+	background-image: url("Images/balance-3129347_1280.jpg");
 	
 }
 #dlonie p {
