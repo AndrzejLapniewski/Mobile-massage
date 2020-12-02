@@ -5,10 +5,10 @@
 Website design made non profi.
 It was created for practicing code writing
 
-##Setup
+## Setup
 Try a live demo or open index.html in your browser to try it out.
 
-##Demo
+## Demo
 
 https://andrzejlapniewski.github.io/Mobile-massage/
 
