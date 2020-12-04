@@ -276,12 +276,10 @@ a:-webkit-any-link {
 
  
 
-#footer {
+.footer {
 	display:inline-block;
-	
 	width: 100%;
 	max-width: 940px;
-	max-height: 100px;
 	background-color: #555;
 	color: #ddd;
 	padding: 10px;
@@ -289,7 +287,7 @@ a:-webkit-any-link {
 }
 
 
-#footer a {
+.footer a {
 
 	float: right;
 	padding: 10px;
@@ -309,6 +307,13 @@ a:-webkit-any-link {
 	float: left;
 	padding: 0px 40px 0px 60px;
 	
+	
+}
+.footer2 {
+	
+	opadding: 0px 40px 0px 60px;
+	
+	
 }
 .footer3{
 	clear: left;
@@ -317,8 +322,9 @@ a:-webkit-any-link {
 	text-align: right;
 	position: relative ; 
 	top:-30px;
+	
 }
-#footer a:hover {
+.footer a:hover {
 	color: #ddd;
 	background-color: #555;
 	transform: scale(1.1 );
@@ -335,4 +341,10 @@ figure img{
 	
 }
 
-/*    font-family: 'Montserrat', sans-serif; */
+@media  ( max-width: 900px)
+{.footer3, .footer2{display: block;float: left; padding: 40px 40px 0px 60px; }
+}
+@media  ( max-device-width: 900px)
+{.footer3, .footer2{display: block;float: left; padding: 40px 40px 0px 60px; }
+}
+ 
