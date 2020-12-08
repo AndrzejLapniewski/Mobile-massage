@@ -306,14 +306,11 @@ a:-webkit-any-link {
 	font-size: 16px;
 	float: left;
 	padding: 0px 40px 0px 60px;
-	
+	display: inline-block;
 	
 }
 .footer2 {
-	
-	opadding: 0px 40px 0px 60px;
-	
-	
+
 }
 .footer3{
 	clear: left;
