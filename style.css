@@ -310,7 +310,8 @@ a:-webkit-any-link {
 	
 }
 .footer2 {
-
+	display: inline-block;
+	padding: 0px 40px 0px 60px;
 }
 .footer3{
 	clear: left;
@@ -342,6 +343,6 @@ figure img{
 {.footer3, .footer2{display: block;float: left; padding: 40px 40px 0px 60px; }
 }
 @media  ( max-device-width: 900px)
-{.footer3, .footer2{display: block;float: left; padding: 40px 40px 0px 60px; }
+{.footer3, .footer2, .footer1{display: block;float: left; padding: 40px 40px 0px 60px; }
 }
  
