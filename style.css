@@ -302,24 +302,21 @@ a:-webkit-any-link {
 	font-family: Arial;
 	transition: ease 0.5s;
 }
-.footer1, .footer2 {
+.footer1, .footer2, .footer3 {
 	font-size: 16px;
-	float: left;
 	padding: 0px 40px 0px 60px;
 	display: inline-block;
 	
+	
 }
-.footer2 {
-	display: inline-block;
-	padding: 0px 40px 0px 60px;
-}
+
 .footer3{
-	clear: left;
-	display: block;
+	
+
 	font-size: 12px;
 	text-align: right;
-	position: relative ; 
-	top:-30px;
+	
+	
 	
 }
 .footer a:hover {
@@ -327,6 +324,7 @@ a:-webkit-any-link {
 	background-color: #555;
 	transform: scale(1.1 );
 	box-shadow:-3px 3px 15px rgb(54, 53, 51);
+	float: right;
 }
 
 figure{
@@ -339,10 +337,8 @@ figure img{
 	
 }
 
-@media  ( max-width: 900px)
-{.footer3, .footer2{display: block;float: left; padding: 40px 40px 0px 60px; }
-}
+
 @media  ( max-device-width: 900px)
-{.footer3, .footer2, .footer1{display: block;float: left; padding: 40px 40px 0px 60px; }
+{.footer3, .footer2, .footer1 {display:block; padding: 40px 40px 0px 60px; }
 }
  
