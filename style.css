@@ -283,7 +283,7 @@ a:-webkit-any-link {
 	background-color: #555;
 	color: #ddd;
 	padding: 10px;
-	
+	font-size: 15px;
 }
 
 
@@ -303,7 +303,7 @@ a:-webkit-any-link {
 	transition: ease 0.5s;
 }
 .footer1, .footer2, .footer3 {
-	font-size: 16px;
+	font-size:30px;
 	padding: 0px 40px 0px 60px;
 	display: inline-block;
 	
