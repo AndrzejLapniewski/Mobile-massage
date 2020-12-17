@@ -10,24 +10,33 @@
 
 <body>
   <div id="wrapper">
-  <div id="header">
-  <img src="Images/massage-1017255_640.png" class="logo" alt="Logo"/> 
+    <div id="header">
+      <img src="Images/massage-1017255_640.png" class="logo" alt="Logo"/> 
 
+    
+      <div class="Mobilna">
+        <p>MOBILNA MASAŻYSTKA</p>
+      
+        <div id="menu" class="navigation">
+              <ul>
+                <li><a href="Index.html">Strona główna</a></li>
+                <li><a href="Oferta.html">Oferta</a></li>
+                <li><a href="Masage mobile.html">Masaż mobilny</a></li>
+                <li><a href="Cennik.html">Cennik</a></li>
+                <li id="active"><a href="Kontakt.html">Kontakt</a></li>
+              </ul>
+        </div> 
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <div id="space">
+    
+      </div>
   
-  <div class="Mobilna">
-    <p>MOBILNA MASAŻYSTKA
-    </p>
-  
-  <div id="menu">
-        <ul>
-        <li><a href="Index.html">Strona główna</a></li>
-        <li><a href="Oferta.html">Oferta</a></li>
-        <li><a href="Masage mobile.html">Masaż mobilny</a></li>
-        <li><a href="Cennik.html">Cennik</a></li>
-        <li id="active"><a href="Kontakt.html">Kontakt</a></li>
-        </ul>
-    </div> 
-  </div>
   <div id="container">
     
     <div class="box_news" id="dlonie">
@@ -64,7 +73,7 @@
         <div class="footer2">
           <p>
             Kontakt: <br><br>
-            Tel.  518 608 761 <br>
+            Tel.  518 608 76. <br>
             e-mail: mobilnamasazystka@gmail.com <br>
 
           </p>
@@ -76,5 +85,17 @@
     </div>
 
   </div>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.navigation');
+    
+    const handleClick = () => {
+      hamburger.classList.toggle('hamburger--active');
+      nav.classList.toggle('navigation--active');
+    }
+    
+    hamburger.addEventListener('click', handleClick);
+    </script>
 
 </body>

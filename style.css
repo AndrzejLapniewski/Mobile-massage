@@ -27,9 +27,9 @@ a {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-}
+	}
 .Mobilna p {
-	color: rgb(151, 146, 140);
+	color: rgb(180, 175, 168);
 	font-size: 24px;
 	display: inline-block;
 	margin-left: 20px;
@@ -60,10 +60,7 @@ a:hover {
 	float: right;
 	margin-top: 40px;
 	padding-right: 40px;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	
+
 }
 
 #menu ul {
@@ -83,7 +80,7 @@ a:hover {
 }
 
 #menu a {
-	color: rgb(151, 146, 140);;
+	color: rgb(180, 175, 168);
 	font-size: 13px;
 	display: block;
 	padding: 0px 15px 15px 15px;
@@ -94,15 +91,20 @@ a:hover {
 }
 
 #menu a:hover {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.096);
 	
 	font-size: 18px;
 	
 }
 #active a{	
 	text-decoration-line: underline;
-	transition: 50s;
+	color:  rgb(107, 104, 101);
+	
 }
+.hamburger{
+	display: none;
+}
+
 #space{
 	height: 5px;
 	color: rgb(230, 223, 216);
@@ -224,7 +226,7 @@ table{
 	overflow: hidden;
 	width: 100%;
 }
-tr,th, td {
+tr, th, td {
 	padding: 20px  ;
 	
 	font-size: 20px;
@@ -240,7 +242,7 @@ td{
 	max-width: 180px;
 	min-width: 80px;
 	}
-	
+#table {margin-bottom: 50px;}	
 span, .mini1{
 	font-size: 16px !important;
 	text-transform: lowercase;
@@ -265,6 +267,7 @@ a:-webkit-any-link {
 }
 .right1{
 	float: right;
+	box-sizing: content-box!important;
 }
 
 .parallax-window {
@@ -339,8 +342,147 @@ figure img{
 
 
 @media  ( max-device-width: 900px)
-{.box_news p, .box_fp p, .box_news ul, .box_fp ul  {font-size:16px; line-height: 3em;}
+{
+	.logo, .mobilna p {
+		z-index: 2;
+	}
+.Mobilna p {font-size: 3.9em; }
+#header {height: auto;}
+#header img {z-index: 5;}
+#menu {float: none; padding-right: 0px; }
+#menu ul {margin: 10px auto; float: none;}
+#menu ul li { float: none;  text-align: center;}
+#menu ul li a{font-size: 2em;}
+.box_news p, .box_fp p, .box_news ul, .box_fp ul  {font-size:16px; line-height: 3em;}
 .footer3, .footer2, .footer1 {display:block; float: left; padding: 40px 40px 0px 60px; font-size:40px; line-height: 1.5em;}
-.footer3{ font-size: 16px;}
-.footer a, .box{ font-size: 2em;}}
+.footer3{ font-size: 16px; display: inline;}
+.footer a, .box{ font-size: 2em;}
+.right1  :first-child{font-size: 2em; line-height: 2em;}
+.right1  :nth-child(2) {display: none;}
+.right1  :nth-child(3) {display: none;}
+#menu ul li::before{
+	display:block;
+	content:"";
+	width:80vw;
+	height:3px;
+	background:rgba(185, 180, 175, 0.3);
+	margin: 15px auto 30px;}
+#menu ul li:last-child  ::after
+	{
+	display:block;
+	content:"";
+	width:80vw;
+	height:3px;
+	background:rgba(185, 180, 175, 0.3);
+	margin: 30px auto}
+
+	  
+	  *, *::before, *::after {
+		box-sizing: inherit;
+	  }
+	  
+	 
+	  
+	  .hamburger {
+		padding: 20px;
+		display: inline-block;
+		cursor: pointer;
+		background-color: transparent;
+		border: 0;
+		margin: 0;
+		background-color:transparent;
+		float: right;
+	  }
+	  
+	  .hamburger, .navigation {
+		transition: transform .3s .1s ease-in-out;
+	  }
+	  
+	  .hamburger--active {
+		transform: translateY(0px);
+	  }
+	  
+	  .hamburger__box {
+		width: 70px;
+		height: 48px;
+		display: inline-block;
+		position: relative;
+	  }
+	  
+	   .hamburger__inner {
+		width: 100%;
+		height: 6px;
+		background-color:  rgb(255, 250, 245);
+		position: absolute;
+		
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: background-color .1s .2s ease-in-out;
+		color: #ddd;
+	  }
+	  
+	  .hamburger__inner::before,
+	  .hamburger__inner::after {
+		width: 100%;
+		height: 6px;
+		background-color:  rgb(255, 250, 245);
+		position: absolute;
+		
+		content: '';
+		left: 0;
+		transition: transform .2s .2s ease-in-out;
+		color: #ddd;
+	  } 
+	  
+	  .hamburger__inner::before {
+		top: -20px;
+	  }
+	  
+	  .hamburger__inner::after {
+		top: 20px;
+	  }
+	  
+	  .hamburger--active .hamburger__inner {
+		background-color: transparent;
+	  }
+	  
+	  .hamburger--active .hamburger__inner:before {
+		transform: translateY(20px) rotate(45deg);
+	  }
+	  
+	  .hamburger--active .hamburger__inner:after {
+		transform: translateY(-20px) rotate(-45deg);
+	  }
+	  
+	  .navigation {
+		
+		background-color: transparent;
+		width:98% ;
+		position: absolute;
+		transform: translateY(-825px);
+		padding-top: 50px ;
+	  }
+	  
+	  .navigation--active {
+		transform: translateY(45px);
+		background-color: rgb(46, 44, 42);
+	  }
+	  
+	  .navigation__list {
+		margin-top: 50px;
+		list-style: none;
+	  }
+	  
+	  .navigation__item {
+		margin-bottom: 20px;
+		
+	  }
+
+.masage_type_top{display: inline;}	
+.masage_type_line{display: inline;}
+.masage_type{display: inline;}
+.masage_type h2 {font-size: 1em!important;}
+tr, th, td {font-size: 1.5em;}
+}
  

@@ -21,8 +21,6 @@ I learned and practiced styling and simple scripts in.
 
 ## Status
 
-The website works, but it needs to be refined:
-- footer behavior.
-- adding responsiveness (hamburger menu)
+The website works.
 
 The page is not hosted on the server yet.

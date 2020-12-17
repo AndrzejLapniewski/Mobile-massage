@@ -16,11 +16,9 @@
 
       
       <div class="Mobilna">
-        <p>
-          MOBILNA MASAŻYSTKA
-        </p>
-      
-        <div id="menu">
+        <p>MOBILNA MASAŻYSTKA</p>
+       
+        <div id="menu" class="navigation">
               <ul>
                 <li id="active"><a href="Index.html">Strona główna</a></li>
                 <li><a href="Oferta.html">Oferta</a></li>
@@ -28,9 +26,12 @@
                 <li><a href="Cennik.html">Cennik</a></li>
                 <li><a href="Kontakt.html">Kontakt</a></li>
               </ul>
-        
         </div>
-
+        <button class="hamburger">
+          <span class="hamburger__box">
+            <span class="hamburger__inner"></span>
+          </span>
+        </button>
       </div> 
 
       
@@ -57,7 +58,7 @@
 
           </p>
           <p>
-            Ale nie tylko w domu… <br>
+            Ale nie tylko w domu … <br>
             Zapraszamy do współpracy firmy, organizatorów eventów i konferencji, hotele, które do swojej oferty chcą dołączyć usługę masażu, a nie posiadają odpowiedniego zaplecza aby samodzielnie móc ją wprowadzić. Oferujemy korzystne programy partnerskie, a przede wszystkim profesjonalizm i bardzo wysoką jakość usług.
           </p>
           <p>
@@ -154,7 +155,7 @@
         <div class="footer2">
           <p>
             Kontakt: <br><br>
-            Tel.  518 608 761 <br>
+            Tel.  518 608 76. <br>
             e-mail: mobilnamasazystka@gmail.com <br>
 
           </p>
@@ -168,6 +169,16 @@
   </div>
   
   
-        
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.navigation');
+    
+    const handleClick = () => {
+      hamburger.classList.toggle('hamburger--active');
+      nav.classList.toggle('navigation--active');
+    }
+    
+    hamburger.addEventListener('click', handleClick);
+    </script>
 
 </body>
