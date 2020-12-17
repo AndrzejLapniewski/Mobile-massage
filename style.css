@@ -29,7 +29,7 @@ a {
 	top: 0;
 }
 .Mobilna p {
-	color: rgb(151, 146, 140);
+	color: rgb(180, 175, 168);
 	font-size: 24px;
 	display: inline-block;
 	margin-left: 20px;
@@ -80,7 +80,7 @@ a:hover {
 }
 
 #menu a {
-	color: rgb(151, 146, 140);;
+	color: rgb(180, 175, 168);
 	font-size: 13px;
 	display: block;
 	padding: 0px 15px 15px 15px;
@@ -91,14 +91,15 @@ a:hover {
 }
 
 #menu a:hover {
-	color: #fff;
+	color: rgba(255, 255, 255, 0.096);
 	
 	font-size: 18px;
 	
 }
 #active a{	
 	text-decoration-line: underline;
-	transition: 50s;
+	color:  rgb(107, 104, 101);
+	wtransition: 50s;
 }
 #space{
 	height: 5px;
@@ -221,7 +222,7 @@ table{
 	overflow: hidden;
 	width: 100%;
 }
-tr,th, td {
+tr, th, td {
 	padding: 20px  ;
 	
 	font-size: 20px;
@@ -237,7 +238,7 @@ td{
 	max-width: 180px;
 	min-width: 80px;
 	}
-	
+#table {margin-bottom: 50px;}	
 span, .mini1{
 	font-size: 16px !important;
 	text-transform: lowercase;
@@ -366,10 +367,9 @@ figure img{
 	background:rgba(185, 180, 175, 0.3);
 	margin: 30px auto}
 .masage_type_top{display: inline;}	
-.masage_type_line{display: inline; text-align: center;}
-.masage_type{display: inline; width: 200px;}
-.masage_type h2 {font-size: 1.5em!important;  padding: 40px!important;
-	;
-}
+.masage_type_line{display: inline;}
+.masage_type{display: inline;}
+.masage_type h2 {font-size: 1em!important;}
+tr, th, td {font-size: 1.5em;}
 }
  
