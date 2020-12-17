@@ -365,5 +365,11 @@ figure img{
 	height:3px;
 	background:rgba(185, 180, 175, 0.3);
 	margin: 30px auto}
+.masage_type_top{display: inline;}	
+.masage_type_line{display: inline; text-align: center;}
+.masage_type{display: inline; width: 200px;}
+.masage_type h2 {font-size: 1.5em!important;  padding: 40px!important;
+	;
+}
 }
  
