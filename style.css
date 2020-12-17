@@ -60,10 +60,7 @@ a:hover {
 	float: right;
 	margin-top: 40px;
 	padding-right: 40px;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	
+
 }
 
 #menu ul {
@@ -339,8 +336,34 @@ figure img{
 
 
 @media  ( max-device-width: 900px)
-{.box_news p, .box_fp p, .box_news ul, .box_fp ul  {font-size:16px; line-height: 3em;}
+{
+.Mobilna p {font-size: 3.9em; }
+#header {height: auto;}
+#menu {float: none; padding-right: 0px; }
+#menu ul {margin: 10px auto; float: none;}
+#menu ul li { float: none;  text-align: center;}
+#menu ul li a{font-size: 2em;}
+.box_news p, .box_fp p, .box_news ul, .box_fp ul  {font-size:16px; line-height: 3em;}
 .footer3, .footer2, .footer1 {display:block; float: left; padding: 40px 40px 0px 60px; font-size:40px; line-height: 1.5em;}
 .footer3{ font-size: 16px; display: inline;}
-.footer a, .box{ font-size: 2em;}}
+.footer a, .box{ font-size: 2em;}
+.right1  :first-child{font-size: 2em; line-height: 2em;}
+.right1  :nth-child(2) {display: none;}
+.right1  :nth-child(3) {display: none;}
+#menu ul li::before{
+	display:block;
+	content:"";
+	width:80vw;
+	height:3px;
+	background:rgba(185, 180, 175, 0.3);
+	margin: 15px auto 30px;}
+#menu ul li:last-child  ::after
+	{
+	display:block;
+	content:"";
+	width:80vw;
+	height:3px;
+	background:rgba(185, 180, 175, 0.3);
+	margin: 30px auto}
+}
  
