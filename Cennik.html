@@ -18,7 +18,7 @@
     <p>MOBILNA MASAŻYSTKA
     </p>
   
-  <div id="menu">
+  <div id="menu" class="navigation">
         <ul>
         <li><a href="Index.html">Strona główna</a></li>
         <li><a href="Oferta.html">Oferta</a></li>
@@ -27,6 +27,11 @@
         <li><a href="Kontakt.html">Kontakt</a></li>
         </ul>
     </div> 
+    <button class="hamburger">
+      <span class="hamburger__box">
+        <span class="hamburger__inner"></span>
+      </span>
+    </button>
   </div>
 </div> 
 
@@ -146,4 +151,16 @@
        
     </div>
     </div>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('.navigation');
+      
+      const handleClick = () => {
+        hamburger.classList.toggle('hamburger--active');
+        nav.classList.toggle('navigation--active');
+      }
+      
+      hamburger.addEventListener('click', handleClick);
+      </script>
+
 </body>
